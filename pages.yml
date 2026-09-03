@@ -1,0 +1,95 @@
+# Pages CMS 설정 파일
+# https://pagescms.org/docs/configuration/
+#
+# 이 저장소(yuristal-svg/yuristal1)의 data/works.json 을
+# Pages CMS 관리 화면(app.pagescms.org)에서 폼으로 편집할 수 있게 해줍니다.
+# index.html, 기존 works.json 내용, 이미지 파일은 이 설정으로 인해 전혀 바뀌지 않습니다.
+
+media:
+  - name: works-images
+    label: 작품 이미지
+    input: assets/images/works
+    output: assets/images/works
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+    rename: false
+
+content:
+  - name: works
+    label: 작품 목록 (works.json)
+    type: file
+    path: data/works.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: 작품 식별자 (ID)
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: "영문 소문자, 숫자, 하이픈(-)만 사용할 수 있어요. 예: father-memory"
+        description: >-
+          이 작품의 고유 번호예요. 새 작품을 만들 때만 입력하고,
+          ⚠️ 한 번 저장한 뒤에는 절대 수정하지 마세요 — 사이트 코드가
+          이 값으로 이미지·설명을 찾기 때문에, 바꾸면 연결이 끊어져요.
+
+      - name: kind
+        label: 작품 유형
+        type: string
+        required: true
+        description: '예: "Documentary Film", "Book", "Writing Project · Facilitator"'
+
+      - name: title_en
+        label: 영문 제목
+        type: string
+        required: true
+
+      - name: title_kr
+        label: 한글 제목
+        type: string
+        required: true
+
+      - name: date
+        label: 제작 연도
+        type: string
+        description: '예: "2024", "2021 –" (진행 중인 작업은 하이픈으로 표시)'
+
+      - name: tags
+        label: 태그
+        type: string
+        list: true
+        description: 작품 카드에 표시될 태그예요. 필요한 만큼 추가/삭제할 수 있어요.
+
+      - name: desc
+        label: 작품 설명
+        type: text
+        description: 카드를 클릭했을 때 팝업으로 뜨는 상세 설명이에요. 여러 줄로 작성할 수 있어요.
+
+      - name: image
+        label: 대표 이미지
+        type: image
+        options:
+          media: works-images
+        description: >-
+          assets/images/works 폴더에 있는 기존 이미지 중에서 고르거나,
+          새 이미지를 업로드할 수 있어요 (jpg, jpeg, png, webp).
+
+      - name: link
+        label: 링크 1 (구매처 등)
+        type: string
+        description: '예: https://... 또는 mailto:...  (없으면 비워두세요)'
+
+      - name: link_label
+        label: 링크 1 버튼 이름
+        type: string
+        description: '예: "교보문고에서 보기 · View on Kyobo Book"'
+
+      - name: link2
+        label: 링크 2 (구매처 등)
+        type: string
+        description: 두 번째 링크가 필요할 때만 입력하세요 (없으면 비워두세요).
+
+      - name: link2_label
+        label: 링크 2 버튼 이름
+        type: string
