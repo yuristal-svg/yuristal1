@@ -1,0 +1,104 @@
+[
+  {
+    "id": "father-memory",
+    "title_en": "A Father's Memory",
+    "title_kr": "아빠의 기억",
+    "kind": "Documentary Film",
+    "date": "2024",
+    "tags": [
+      "DOCUMENTARY",
+      "FILM"
+    ],
+    "desc": "",
+    "image": "",
+    "link": "",
+    "link_label": "",
+    "link2": "",
+    "link2_label": ""
+  },
+  {
+    "id": "table-diary",
+    "title_en": "A Korean Working Mom's Table Diary",
+    "title_kr": "워킹맘의 식-탁일기",
+    "kind": "Book",
+    "date": "2025",
+    "tags": [
+      "BOOK",
+      "PUBLICATION"
+    ],
+    "desc": "『워킹맘의 식탁일기』는 여성으로서, 노동자로서, 그리고 양육자로서 바쁜 일상을 살아가는 내가 하루 한 끼의 음식을 통해 감정과 생각을 솔직하게 풀어낸 에세이입니다. 식탁 한 편에서 쓴 저의 이야기가 수많은 역할들 사이를 오고가는 여성 양육자들에게 작은 응원이 되기를 바랍니다.\n\n목차\n\nChapter 1. 2024년 2월 기록\n1) 양배추 달걀 참치 볶음밥\n2) 에그 인 헬\n3) 상황 추어탕\n4) 빈 속에 커피 한 잔\n5) 야채김밥\n6) 에그 샐러드와 바나나\n7) 매운 샤브샤브\n\nChapter 2. 2024년 3월 기록\n8) 수하동 곰탕\n9) 애증의 애슐리\n10) 삶은 달걀\n11) 사발 커피\n12) 돼지갈비\n13) 토마토 닭찜\n14) 동네 고깃집\n15) 소시지롤\n16) 돼지고기 김치찌개\n17) 총각김치 폭챱\n18) 오버나이트 오트밀\n19) 삼색 달걀말이\n20) 식후 아이스 아메리카노\n21) 열무김치\n22) 아이가 남긴 밥\n23) 레고랜드 떡볶이\n24) 상추쌈과 채소스틱\n25) 문제의 떡볶이\n26) 충격과 공포의 부대찌개\n27) 제니쿠키\n\nChapter 3. 2024년 4월 기록\n28) 배추 돼지고기 볶음밥\n29) 팽이버섯 참치 볶음밥\n30) 대패 소고기와 토마토 샐러드\n31) 달걀 두 개\n32) 이놈의 애슐리\n33) 소고기 구이\n34) 시판용 샐러드\n35) 도다리 세꼬시\n36) 찹 스테이크\n37) 샐러드와 목살 구이\n38) 추어탕\n39) 배추 목살 볶음밥\n40) 갈빗살 구이\n41) 멜팅 슈레드 치즈 양배추\n42) 아이스 아메리카노\n43) 두부전골\n44) 양배추 카레\n45) 맛 간 카레\n46) 죽지도 않고 돌아온 애슐리\n47) 서브웨이 샌드위치\n48) 전망대 레스토랑\n49) 스타벅스 커피 한 잔\n50) 누룽지 양배추 볶음\n51) 4층 석탑 도시락\n\nChapter 4. 2024년 5월 기록\n52) 백화점 똠얌꿍\n53) 소맥 한 양재기\n54) 훈제 연어 샌드위치\n55) 토마토 오믈렛\n56) 스타벅스 요거트\n57) 육회 한 사발\n58) 계란 프라이 두 개\n59) 토르티야 참치 계란 폭탄밥\n60) 뇨끼 참치 계란 볶음\n61) 면 없는 쌀국수\n62) 시어머니 한 상\n63) 야채김밥 한 줄\n64) 탄산수 한 잔\n65) 버섯 샐러드\n66) 소셜팜 구내 식당\n67) 치즈 양배추 프리타타\n68) 부챗살 스테이크\n69) 멍게 한 사발\n70) 야구장 튀김만두\n71) 추어탕\n72) 양배추 계란 볶음밥\n73) 새우 샐러드\n74) 오색 방울 토마토\n75) 단체 도시락\n\n작가의 말\n\n「워킹맘의 식탁일기」는 바쁜 일상 속에서도 어떻게든 글을 쓰기 위해 찾아낸 형식입니다. 어떻게든 삼시세끼는 차려내고 먹어야 했기에, 그중 한 끼를 골라 식탁 한편에서 그날의 생각과 하루하루를 전쟁처럼 써내려갔습니다. 그렇게 모인 기록을 들여다보니, 저라는 사람에 대한 희미한 조각들이 만들어져 있었습니다.",
+    "image": "assets/images/works/table-diary-kr.jpg",
+    "link": "https://product.kyobobook.co.kr/detail/S000219451543",
+    "link_label": "교보문고에서 보기 · View on Kyobo Book",
+    "link2": "https://www.amazon.com/dp/B0CWC2KGD5",
+    "link2_label": "Amazon Kindle에서 보기 · View on Amazon Kindle"
+  },
+  {
+    "id": "women-chairs",
+    "title_en": "WOMEN AND THEIR CHAIRS",
+    "title_kr": "여성들과 그들의 의자",
+    "kind": "Concept, Curation & Design",
+    "date": "2026",
+    "tags": [
+      "CURATORIAL",
+      "ARCHIVE"
+    ],
+    "desc": "Virginia Woolf wrote that a woman needs money and a room of her own in order to write. A century later, having a space entirely of one's own still cannot be taken for granted. Especially after marriage and caregiving become part of daily life, women's spaces often overlap with shared family spaces, blurring the boundaries between work for oneself and work for others.\n버지니아 울프는 글을 쓰기 위해 여성에게는 돈과 자기만의 방이 필요하다고 썼습니다. 한 세기가 지난 지금도, 온전히 자신만의 공간을 갖는다는 것은 여전히 당연하지 않습니다. 특히 결혼과 돌봄이 일상의 일부가 된 이후, 여성의 공간은 종종 가족의 공유 공간과 겹치며 자신을 위한 일과 타인을 위한 일 사이의 경계를 흐릿하게 만듭니다.\n\nIt was within these blurred boundaries that I began to look at women's chairs.\n저는 이 흐려진 경계 안에서 여성의 의자를 바라보기 시작했습니다.\n\nA dining chair becomes a work chair, a living-room chair a place for nursing and rest, and a corner of a child's room a small workspace. Professional work, caregiving, housework, rest, and moments for oneself overlap within the same spaces and hours. WOMEN AND THEIR CHAIRS looks at the places women make their own within these everyday circumstances.\n식탁 의자는 작업 의자가 되고, 거실 의자는 수유와 휴식의 자리가 되며, 아이 방의 한 구석은 작은 작업 공간이 됩니다. 일, 돌봄, 가사, 휴식, 그리고 자신만을 위한 순간들이 같은 공간과 시간 안에서 겹쳐집니다. WOMEN AND THEIR CHAIRS는 이러한 일상 속에서 여성들이 스스로 만들어낸 자리를 바라봅니다.\n\nThe project began with the prompt \"To the Empty Chair\" in WE ARE SO YOUNG × WRITING: Self-Care Writing. Twelve women photographed chairs they repeatedly occupy and wrote about the memories and experiences held within them. I selected excerpts from their writing, paired them with the photographs, and brought the twelve individual records together as a photographic and textual archive.\n이 프로젝트는 「위아소영 × 라이팅: 나를 돌보는 글쓰기」의 글감 \"빈 의자에게\"에서 시작되었습니다. 열두 명의 여성이 자신이 반복해서 앉는 의자를 사진으로 찍고, 그 의자에 담긴 기억과 경험을 글로 썼습니다. 저는 그 글에서 발췌한 문장을 사진과 짝지어, 열두 개의 개인적인 기록을 하나의 사진·텍스트 아카이브로 엮었습니다.\n\nRather than portraying the women through their faces, I gathered the places where they repeatedly sit. Ordinary, worn, shared, and sometimes temporary, these chairs hold traces of women who work, care, rest, write, grieve, and dream. Placed side by side, their private experiences become a collective record of women's everyday lives.\n저는 이 여성들을 얼굴로 보여주는 대신, 그들이 반복해서 머무는 자리를 모았습니다. 평범하고, 낡고, 함께 쓰이고, 때로는 일시적인 이 의자들에는 일하고, 돌보고, 쉬고, 쓰고, 슬퍼하고, 꿈꾸는 여성들의 흔적이 담겨 있습니다. 나란히 놓였을 때, 그들의 사적인 경험은 여성들의 일상에 대한 하나의 집단적 기록이 됩니다.\n\nThe archive does not end with Chair 12. Chair 13 remains empty — a space for a story yet to be told.\n아카이브는 열두 번째 의자로 끝나지 않습니다. 열세 번째 의자는 비어 있습니다 — 아직 쓰이지 않은 이야기를 위한 자리로.\n\n\"What story does your chair hold?\"\n\"당신의 의자는 어떤 이야기를 품고 있나요?\"\n\nIn the exhibition, visitors are invited to reflect on the chairs they return to and the time they have spent there, and to leave their own stories. I hope the archive will continue beyond its original twelve participants, becoming a space where more women's experiences can meet and be heard.\n전시에서 관람객은 자신이 돌아가 앉는 의자와 그곳에서 보낸 시간을 떠올리고, 자신만의 이야기를 남기도록 초대받습니다. 이 아카이브가 최초의 열두 명을 넘어 계속 이어지며, 더 많은 여성들의 경험이 만나고 들려지는 공간이 되기를 바랍니다.\n\nIn this way, WOMEN AND THEIR CHAIRS is not a completed record, but an evolving archive, continually shaped by the stories added to it.\n이러한 의미에서 WOMEN AND THEIR CHAIRS는 완결된 기록이 아니라, 더해지는 이야기들에 의해 계속 형태를 갖춰가는 진행형의 아카이브입니다.\n\nConcept, Curation & Design — Lee Hyangrim\nPhotographs & Words — 12 women, including Lee Hyangrim (이향림 포함 여성 12인)\n나연 · 민선 · 민희 · 세이 · 소영 · 소현 · 소희 · 순자 · 은영 · 정아 · 향림 · 효진\nNAYEON · MINSEON · MINHEE · SEI · SOYOUNG · SOHYUN · SOHEE · SOONJA · EUNYOUNG · JUNGA · HYANGRIM · HYOJIN",
+    "image": "",
+    "link": "",
+    "link_label": "",
+    "link2": "",
+    "link2_label": ""
+  },
+  {
+    "id": "self-care-writing",
+    "title_en": "WE ARE SO YOUNG × WRITING: Self-Care Writing",
+    "title_kr": "나를 돌보는 글쓰기",
+    "kind": "Facilitator",
+    "date": "2026",
+    "tags": [
+      "WRITING PROJECT",
+      "FACILITATOR"
+    ],
+    "desc": "",
+    "image": "",
+    "link": "",
+    "link_label": "",
+    "link2": "",
+    "link2_label": ""
+  },
+  {
+    "id": "nakuzak",
+    "title_en": "[NAKJAK] — Collective of 6 Women Creators",
+    "title_kr": "[나크작] — 여성 크리에이터·작가 6인 모임",
+    "kind": "Creative Collective · Member",
+    "date": "2021 –",
+    "tags": [
+      "COLLECTIVE",
+      "MEMBER"
+    ],
+    "desc": "",
+    "image": "",
+    "link": "",
+    "link_label": "",
+    "link2": "",
+    "link2_label": ""
+  },
+  {
+    "id": "spy-writing",
+    "title_en": "Spy Writing (in NAKJAK)",
+    "title_kr": "스파이 글쓰기 (나크작 내)",
+    "kind": "Writing Project · Facilitator",
+    "date": "2025",
+    "tags": [
+      "WRITING PROJECT",
+      "FACILITATOR"
+    ],
+    "desc": "",
+    "image": "",
+    "link": "",
+    "link_label": "",
+    "link2": "",
+    "link2_label": ""
+  }
+]
