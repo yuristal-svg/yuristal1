@@ -866,15 +866,10 @@
   var grid = document.getElementById('workGrid');
   var currentWorkId = null;
 
-  // simple built-in placeholder designs for works that have no photo yet.
-  // keyed by work id — edit this if you add a new work with no image.
-  var PLACEHOLDER = {
-    'father-memory': '<div class="work-thumb thumb-poster"><div class="stack"><span class="en">A FATHER\'S<br>MEMORY</span><span class="kr">아빠의 기억</span></div></div>',
-    'women-chairs': '<div class="work-thumb thumb-wordmark"><div class="rot">WOMEN<br>AND<br>THEIR<br>CHAIRS</div></div>',
-    'self-care-writing': '<div class="work-thumb thumb-notebook"><div class="word">나를 돌보는<br>글쓰기</div></div>',
-    'nakuzak': '<div class="work-thumb thumb-poster"><div class="stack"><span class="en">6 WOMEN<br>CREATORS</span><span class="kr">나크작</span></div></div>',
-    'spy-writing': '<div class="work-thumb thumb-wordmark"><div class="rot">스파이<br>글쓰기</div></div>'
-  };
+  // Main-grid cards use one consistent yellow typographic system.
+  // Titles are read directly from works.json, so new works added in Pages CMS
+  // automatically receive the same card design without editing index.html.
+
 
   function render(){
     grid.innerHTML = '';
@@ -891,18 +886,26 @@
         '<div class="date">' + w.date + '</div>';
       item.appendChild(meta);
 
+      // Main grid thumbnail is ALWAYS the same yellow typographic card.
+      // The text comes directly from works.json, while w.image remains available
+      // for the detail modal. This also works automatically for newly added works.
       var thumbWrap = document.createElement('div');
-      if (w.image) {
-        thumbWrap.className = 'work-thumb';
-        var img = document.createElement('img');
-        img.className = 'custom-img';
-        img.src = w.image;
-        img.alt = w.title_en;
-        thumbWrap.appendChild(img);
-      } else {
-        thumbWrap.innerHTML = PLACEHOLDER[w.id] || '<div class="work-thumb thumb-poster"></div>';
-        thumbWrap = thumbWrap.firstElementChild;
-      }
+      thumbWrap.className = 'work-thumb thumb-poster';
+
+      var stack = document.createElement('div');
+      stack.className = 'stack';
+
+      var en = document.createElement('span');
+      en.className = 'en';
+      en.textContent = (w.title_en || '').toUpperCase();
+
+      var kr = document.createElement('span');
+      kr.className = 'kr';
+      kr.textContent = w.title_kr || '';
+
+      stack.appendChild(en);
+      stack.appendChild(kr);
+      thumbWrap.appendChild(stack);
       item.appendChild(thumbWrap);
 
       thumbWrap.addEventListener('click', function(){ openModal(w.id); });
@@ -917,6 +920,7 @@
   function openModal(id){
     var w = findWork(id);
     currentWorkId = id;
+    // Detail modal still shows the real photo (w.image) when set — unchanged.
     var media = document.getElementById('modalMedia');
     media.innerHTML = w.image
       ? '<img src="' + w.image + '" alt="">'
