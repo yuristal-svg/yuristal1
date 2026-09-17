@@ -1,0 +1,14 @@
+[
+  { "id": "chair-01", "number": "01", "name": "나연", "excerpt": "", "image": "" },
+  { "id": "chair-02", "number": "02", "name": "민선", "excerpt": "", "image": "" },
+  { "id": "chair-03", "number": "03", "name": "민희", "excerpt": "", "image": "" },
+  { "id": "chair-04", "number": "04", "name": "세이", "excerpt": "", "image": "" },
+  { "id": "chair-05", "number": "05", "name": "소영", "excerpt": "", "image": "" },
+  { "id": "chair-06", "number": "06", "name": "소현", "excerpt": "", "image": "" },
+  { "id": "chair-07", "number": "07", "name": "소희", "excerpt": "", "image": "" },
+  { "id": "chair-08", "number": "08", "name": "순자", "excerpt": "", "image": "" },
+  { "id": "chair-09", "number": "09", "name": "은영", "excerpt": "", "image": "" },
+  { "id": "chair-10", "number": "10", "name": "정아", "excerpt": "", "image": "" },
+  { "id": "chair-11", "number": "11", "name": "향림", "excerpt": "", "image": "" },
+  { "id": "chair-12", "number": "12", "name": "효진", "excerpt": "", "image": "" }
+]
