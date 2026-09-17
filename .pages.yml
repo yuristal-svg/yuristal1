@@ -14,6 +14,14 @@ media:
     categories: [image]
     rename: false
 
+  - name: chair-images
+    label: 의자 사진
+    input: assets/images/chairs
+    output: assets/images/chairs
+    extensions: [jpg, jpeg, png, webp]
+    categories: [image]
+    rename: false
+
 content:
   - name: works
     label: 작품 목록 (works.json)
@@ -278,3 +286,44 @@ content:
         label: 이메일 주소
         type: string
         description: 화면에 표시도 되고, 클릭했을 때 이 주소로 메일쓰기 창이 열려요.
+
+  - name: chair-stories
+    label: 의자 이야기 아카이브 (Chair Archive Stories)
+    type: file
+    path: data/chair-stories.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: 항목 식별자 (ID)
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: "영문 소문자, 숫자, 하이픈(-)만 사용할 수 있어요. 예: chair-01"
+        description: >-
+          ⚠️ 한 번 저장한 뒤에는 절대 수정하지 마세요 — 사진 파일과
+          연결이 끊어질 수 있어요.
+
+      - name: number
+        label: 의자 번호
+        type: string
+        required: true
+        description: '예: "01", "02" — 카드 위에 "CHAIR 01"처럼 표시돼요.'
+
+      - name: name
+        label: 참여자 이름
+        type: string
+        required: true
+
+      - name: excerpt
+        label: 발췌문
+        type: text
+        description: 참여자의 글에서 발췌한 문장이에요. 아직 없으면 비워두세요 — 비워두면 "아직 작성된 이야기가 없어요"로 자동 표시돼요.
+
+      - name: image
+        label: 의자 사진
+        type: image
+        options:
+          media: chair-images
+        description: assets/images/chairs 폴더에서 기존 사진을 고르거나 새로 업로드하세요.
