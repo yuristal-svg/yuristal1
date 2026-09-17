@@ -95,7 +95,8 @@
     margin-bottom:10px;
   }
   .chair-photo{
-    width:100%;
+    width:32%;
+    max-width:140px;
     aspect-ratio:3/4;
     background:var(--paper-dim);
     border:1px solid var(--rule);
@@ -103,7 +104,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-bottom:16px;
+    margin-bottom:24px;
   }
   .chair-photo img{
     width:100%;
@@ -111,19 +112,15 @@
     object-fit:cover;
   }
   .chair-photo .placeholder{
-    font-size:12px;
+    font-size:9px;
+    line-height:1.5;
     color:var(--caption);
     text-align:center;
-    padding:0 16px;
-  }
-  .chair-name{
-    font-family:'Libre Franklin','Noto Serif KR', serif;
-    font-weight:700;
-    font-size:17px;
-    margin-bottom:8px;
+    padding:0 6px;
   }
   .chair-excerpt{
-    font-size:14.5px;
+    font-size:18px;
+    line-height:1.85;
     color:var(--ink-soft);
     white-space:pre-wrap;
   }
@@ -229,7 +226,7 @@
       }
       card.appendChild(photo);
 
-      card.appendChild(el('div', 'chair-name', c.name));
+      // name intentionally not shown — only the CHAIR NN label above is public
 
       var excerpt = el('div', 'chair-excerpt' + (c.excerpt ? '' : ' empty'), c.excerpt || '아직 작성된 이야기가 없어요.');
       card.appendChild(excerpt);
