@@ -1,14 +1,64 @@
 [
-  { "id": "chair-01", "number": "01", "name": "나연", "excerpt": "", "image": "" },
-  { "id": "chair-02", "number": "02", "name": "민선", "excerpt": "", "image": "" },
-  { "id": "chair-03", "number": "03", "name": "민희", "excerpt": "", "image": "" },
-  { "id": "chair-04", "number": "04", "name": "세이", "excerpt": "", "image": "" },
-  { "id": "chair-05", "number": "05", "name": "소영", "excerpt": "", "image": "" },
-  { "id": "chair-06", "number": "06", "name": "소현", "excerpt": "", "image": "" },
-  { "id": "chair-07", "number": "07", "name": "소희", "excerpt": "", "image": "" },
-  { "id": "chair-08", "number": "08", "name": "순자", "excerpt": "", "image": "" },
-  { "id": "chair-09", "number": "09", "name": "은영", "excerpt": "", "image": "" },
-  { "id": "chair-10", "number": "10", "name": "정아", "excerpt": "", "image": "" },
-  { "id": "chair-11", "number": "11", "name": "향림", "excerpt": "", "image": "" },
-  { "id": "chair-12", "number": "12", "name": "효진", "excerpt": "", "image": "" }
+  {
+    "id": "chair-01",
+    "number": "01",
+    "name": "나연",
+    "excerpt": "[내가 유치원 때 앉았던 의자, 이제 딸아이가 물려받았다.]\n엄마가 이 의자를 버리지 않고 계실때는 왜 낡은 의자를 안버리고 갖고계실까 싶었는데 이제야 그 마음을 알것 같다. 아이도 그 마음을 느꼈는지 계속 갖고 있겠다고 하니 고마운 마음이다. \n\n[The chair I sat in as a kindergartener now belongs to my daughter.]\nWhen my mom kept this chair instead of throwing it away, I used to wonder why she would hold on to something so old and worn. Now I think I finally understand. My daughter must feel something for it too, because she says she wants to keep it. And somehow, that makes me grateful.\n\nPhoto and Text by MINSEON",
+    "image": "assets/images/chairs/KakaoTalk_20260917_145056859_10.jpg"
+  },
+  {
+    "id": "chair-02",
+    "number": "02",
+    "name": "민선"
+  },
+  {
+    "id": "chair-03",
+    "number": "03",
+    "name": "민희"
+  },
+  {
+    "id": "chair-04",
+    "number": "04",
+    "name": "세이"
+  },
+  {
+    "id": "chair-05",
+    "number": "05",
+    "name": "소영"
+  },
+  {
+    "id": "chair-06",
+    "number": "06",
+    "name": "소현"
+  },
+  {
+    "id": "chair-07",
+    "number": "07",
+    "name": "소희"
+  },
+  {
+    "id": "chair-08",
+    "number": "08",
+    "name": "순자"
+  },
+  {
+    "id": "chair-09",
+    "number": "09",
+    "name": "은영"
+  },
+  {
+    "id": "chair-10",
+    "number": "10",
+    "name": "정아"
+  },
+  {
+    "id": "chair-11",
+    "number": "11",
+    "name": "향림"
+  },
+  {
+    "id": "chair-12",
+    "number": "12",
+    "name": "효진"
+  }
 ]
