@@ -9,7 +9,9 @@
   {
     "id": "chair-02",
     "number": "02",
-    "name": "민선"
+    "name": "민선",
+    "excerpt": "[내 취향으로 골랐지만, 아무나 앉을 수는 없고 오직 그만이 앉을 수 있다.]\n다른 의자는 안 닦아도 이 의자는 매일 닦는다. 밥풀도 묻어 있고 오색 빛깔 그림이 그려져 있을 때도 있고 온통 스티커로 꾸며져 있을 때도 있다. 의자 주인은 따로 있지만, 주방은 내 구역이므로 주인 몰래 스티커를 제거한다.\n\n[I chose it for myself, but there’s really only one person who gets to sit in it.]\nI don’t clean the other chairs every day, but I do clean this one. Sometimes it’s covered in bits of food, colorful scribbles, or stickers. Technically, the chair belongs to someone else. But the kitchen is my territory, so I secretly peel off the stickers when its owner isn’t looking.",
+    "image": "assets/images/chairs/KakaoTalk_20260917_145056859_06.jpg"
   },
   {
     "id": "chair-03",
