@@ -77,6 +77,25 @@
     text-justify:inter-word;
     word-break:keep-all;
   }
+  .page-statement{
+    max-width:640px;
+    margin:26px 0 0;
+  }
+  .page-statement p{
+    font-size:12.5px;
+    line-height:1.8;
+    margin:0 0 6px;
+    text-align:justify;
+    text-justify:inter-word;
+    word-break:keep-all;
+  }
+  .page-statement p.stmt-en{
+    color:var(--ink-soft);
+  }
+  .page-statement p.stmt-kr{
+    color:var(--caption);
+    margin-bottom:20px;
+  }
 
   /* ---------- Chair grid ---------- */
   .chair-grid{
@@ -193,12 +212,22 @@
 
   <div class="page-head">
     <h1>WOMEN AND THEIR CHAIRS<span class="kr">CHAIR ARCHIVE STORIES</span></h1>
-    <p class="page-intro">
-      「여성의 의자」 프로젝트에 참여한 12명의 여성 작가들의 이야기를
-      소개합니다. 여전히 '자기만의 방'을 갖는 것은 어려운 일이지만,
-      '자기만의 의자'는 있습니다. 자신의 의자에 담긴 기억과 경험을
-      사진과 글로 남겼습니다.
-    </p>
+    <div class="page-statement">
+      <p class="stmt-en">Virginia Woolf wrote that a woman needs money and a room of her own in order to write. A century later, having a space entirely of one's own still cannot be taken for granted. Especially after marriage and caregiving become part of daily life, women's spaces often overlap with shared family spaces, blurring the boundaries between work for oneself and work for others.</p>
+      <p class="stmt-kr">버지니아 울프는 글을 쓰기 위해 여성에게는 돈과 자기만의 방이 필요하다고 썼습니다. 한 세기가 지난 지금도, 온전히 자신만의 공간을 갖는다는 것은 여전히 당연하지 않습니다. 특히 결혼과 돌봄이 일상의 일부가 된 이후, 여성의 공간은 종종 가족의 공유 공간과 겹치며 자신을 위한 일과 타인을 위한 일 사이의 경계를 흐릿하게 만듭니다.</p>
+
+      <p class="stmt-en">It was within these blurred boundaries that I began to look at women's chairs.</p>
+      <p class="stmt-kr">우리는 이 흐려진 경계 안에서 여성의 의자를 바라보기 시작했습니다.</p>
+
+      <p class="stmt-en">A dining chair becomes a work chair, a living-room chair a place for nursing and rest, and a corner of a child's room a small workspace. Professional work, caregiving, housework, rest, and moments for oneself overlap within the same spaces and hours. WOMEN AND THEIR CHAIRS looks at the places women make their own within these everyday circumstances.</p>
+      <p class="stmt-kr">식탁 의자는 작업 의자가 되고, 거실 의자는 수유와 휴식의 자리가 되며, 아이 방의 한 구석은 작은 작업 공간이 됩니다. 일, 돌봄, 가사, 휴식, 그리고 자신만을 위한 순간들이 같은 공간과 시간 안에서 겹쳐집니다. WOMEN AND THEIR CHAIRS는 이러한 일상 속에서 여성들이 스스로 만들어낸 자리를 바라봅니다.</p>
+
+      <p class="stmt-en">The project began with the prompt "To the Empty Chair" in WE ARE SO YOUNG × WRITING: Self-Care Writing. Twelve women photographed chairs they repeatedly occupy and wrote about the memories and experiences held within them. I selected excerpts from their writing, paired them with the photographs, and brought the twelve individual records together as a photographic and textual archive.</p>
+      <p class="stmt-kr">이 프로젝트는 「위아소영 × 라이팅: 나를 돌보는 글쓰기」의 글감 "빈 의자에게"에서 시작되었습니다. 열두 명의 여성 작가들이 자신이 반복해서 앉는 의자를 사진으로 찍고, 그 의자에 담긴 기억과 경험을 글로 썼습니다. 저는 그 글에서 발췌한 문장을 사진과 짝지어, 열두 개의 개인적인 기록을 하나의 사진·텍스트 아카이브로 엮었습니다.</p>
+
+      <p class="stmt-en">We gathered the places where they repeatedly sit. Ordinary, worn, shared, and sometimes temporary, these chairs hold traces of women who work, care, rest, write, grieve, and dream. Placed side by side, their private experiences become a collective record of women's everyday lives.</p>
+      <p class="stmt-kr">평범하고, 낡고, 함께 쓰이고, 때로는 일시적인 이 의자들에는 일하고, 돌보고, 쉬고, 쓰고, 슬퍼하고, 꿈꾸는 여성들의 흔적이 담겨 있습니다. 나란히 놓였을 때, 그들의 사적인 경험은 여성들의 일상에 대한 하나의 집단적 기록이 됩니다.</p>
+    </div>
   </div>
 
   <div class="chair-grid" id="chairGrid"></div>
@@ -213,7 +242,7 @@
   // so both edges of the paragraph line up with "WOMEN AND THEIR CHAIRS".
   function alignIntroWidth(){
     var h1 = document.querySelector('.page-head h1');
-    var intro = document.querySelector('.page-intro');
+    var intro = document.querySelector('.page-statement');
     if (!h1 || !intro) return;
     // measure just the first line (main title), not the smaller subtitle below it
     var range = document.createRange();
