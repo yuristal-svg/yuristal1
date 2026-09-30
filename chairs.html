@@ -62,17 +62,20 @@
   }
   .page-head .kr{
     display:block;
-    font-size:0.42em;
-    font-weight:600;
-    color:var(--ink-soft);
-    margin-top:10px;
-    letter-spacing:0;
+    font-size:0.36em;
+    font-weight:700;
+    color:var(--ink);
+    margin-top:14px;
+    letter-spacing:0.01em;
   }
   .page-intro{
     max-width:640px;
     font-size:15.5px;
     color:var(--ink-soft);
     margin:28px 0 0;
+    text-align:justify;
+    text-justify:inter-word;
+    word-break:keep-all;
   }
 
   /* ---------- Chair grid ---------- */
@@ -189,11 +192,12 @@
   </div>
 
   <div class="page-head">
-    <h1>CHAIR ARCHIVE STORIES<span class="kr">의자 이야기 아카이브</span></h1>
+    <h1>WOMEN AND THEIR CHAIRS<span class="kr">CHAIR ARCHIVE STORIES</span></h1>
     <p class="page-intro">
-      「WOMEN AND THEIR CHAIRS」에 참여한 열두 명의 여성이 자신이 반복해서
-      앉는 의자를 사진으로 찍고, 그 의자에 담긴 기억과 경험을 글로 남겼습니다.
-      아래는 그 글에서 발췌한 이야기들입니다.
+      「여성의 의자」 프로젝트에 참여한 12명의 여성 작가들의 이야기를
+      소개합니다. 여전히 '자기만의 방'을 갖는 것은 어려운 일이지만,
+      '자기만의 의자'는 있습니다. 자신의 의자에 담긴 기억과 경험을
+      사진과 글로 남겼습니다.
     </p>
   </div>
 
@@ -204,6 +208,25 @@
 <script>
 (function(){
   var grid = document.getElementById('chairGrid');
+
+  // Match the intro paragraph's width to the title's rendered width,
+  // so both edges of the paragraph line up with "WOMEN AND THEIR CHAIRS".
+  function alignIntroWidth(){
+    var h1 = document.querySelector('.page-head h1');
+    var intro = document.querySelector('.page-intro');
+    if (!h1 || !intro) return;
+    // measure just the first line (main title), not the smaller subtitle below it
+    var range = document.createRange();
+    range.selectNodeContents(h1);
+    range.setEndBefore(h1.querySelector('.kr'));
+    var titleWidth = range.getBoundingClientRect().width;
+    if (titleWidth > 0){
+      intro.style.maxWidth = titleWidth + 'px';
+      intro.style.width = titleWidth + 'px';
+    }
+  }
+  alignIntroWidth();
+  window.addEventListener('resize', alignIntroWidth);
 
   function el(tag, className, text){
     var e = document.createElement(tag);
