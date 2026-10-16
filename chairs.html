@@ -51,6 +51,24 @@
   /* ---------- Header ---------- */
   .page-head{
     margin:70px 0 20px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    column-gap:44px;
+    align-items:start;
+  }
+  .page-head h1{ grid-column:1 / -1; grid-row:1; }
+  .page-head .page-statement{ grid-column:1; grid-row:2; }
+  .intro-poster{
+    grid-column:2;
+    grid-row:2;
+    margin:26px 0 0;
+    position:sticky;
+    top:32px;
+  }
+  .intro-poster img{
+    display:block;
+    width:100%;
+    height:auto;
   }
   .page-head h1{
     font-family:'Libre Franklin','Noto Sans KR', sans-serif;
@@ -78,7 +96,6 @@
     word-break:keep-all;
   }
   .page-statement{
-    max-width:640px;
     margin:26px 0 0;
   }
   .page-statement p{
@@ -194,6 +211,8 @@
   }
 
   @media (max-width:900px){
+    .page-head{ display:block; }
+    .intro-poster{ position:static; padding-top:0; margin:28px 0 0; max-width:480px; }
     .chair-grid{ grid-template-columns:repeat(2, 1fr); }
   }
   @media (max-width:560px){
@@ -228,6 +247,9 @@
       <p class="stmt-en">We gathered the places where they repeatedly sit. Worn from use, these ordinary chairs hold traces of women who work, care, rest, write, and dream. Placed side by side, their private experiences become a collective record of women's everyday lives.</p>
       <p class="stmt-kr">손때묻은 평범한 이 의자들에는 일하고, 돌보고, 쉬고, 쓰고, 꿈꾸는 여성들의 흔적이 담겨 있습니다. 나란히 놓였을 때, 그들의 사적인 경험은 여성들의 일상에 대한 하나의 집단적 기록이 됩니다.</p>
     </div>
+    <figure class="intro-poster">
+      <img src="assets/images/works/%EC%97%AC%EC%84%B1%EC%9D%98%20%EC%9D%98%EC%9E%90%201.jpg" alt="WOMEN AND THEIR CHAIRS 포스터 — 열두 개의 의자 흑백 사진">
+    </figure>
   </div>
 
   <div class="chair-grid" id="chairGrid"></div>
@@ -238,24 +260,40 @@
 (function(){
   var grid = document.getElementById('chairGrid');
 
-  // Match the intro paragraph's width to the title's rendered width,
-  // so both edges of the paragraph line up with "WOMEN AND THEIR CHAIRS".
-  function alignIntroWidth(){
-    var h1 = document.querySelector('.page-head h1');
-    var intro = document.querySelector('.page-statement');
-    if (!h1 || !intro) return;
-    // measure just the first line (main title), not the smaller subtitle below it
-    var range = document.createRange();
-    range.selectNodeContents(h1);
-    range.setEndBefore(h1.querySelector('.kr'));
-    var titleWidth = range.getBoundingClientRect().width;
-    if (titleWidth > 0){
-      intro.style.maxWidth = titleWidth + 'px';
-      intro.style.width = titleWidth + 'px';
+  // Split the intro row so the poster's height matches the text's height:
+  // try text-column widths and keep the one where the two heights are closest.
+  var head = document.querySelector('.page-head');
+  var statement = document.querySelector('.page-statement');
+  var posterImg = document.querySelector('.intro-poster img');
+  var GAP = 44, MIN_TEXT = 340, MIN_POSTER = 220;
+  function balanceIntro(){
+    if (!head || !statement || !posterImg) return;
+    if (window.innerWidth <= 900){
+      head.style.gridTemplateColumns = '';
+      statement.style.width = '';
+      return;
+    }
+    var ratio = (posterImg.naturalHeight && posterImg.naturalWidth)
+      ? posterImg.naturalHeight / posterImg.naturalWidth : 1.25;
+    var C = head.clientWidth;
+    var best = null, bestDiff = Infinity;
+    for (var w = MIN_TEXT; w <= C - GAP - MIN_POSTER; w += 8){
+      statement.style.width = w + 'px';
+      var th = statement.getBoundingClientRect().height;
+      var ph = (C - GAP - w) * ratio;
+      var d = Math.abs(th - ph);
+      if (d < bestDiff){ bestDiff = d; best = w; }
+    }
+    statement.style.width = '';
+    if (best !== null){
+      head.style.gridTemplateColumns = best + 'px minmax(0,1fr)';
     }
   }
-  alignIntroWidth();
-  window.addEventListener('resize', alignIntroWidth);
+  var t;
+  window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(balanceIntro, 120); });
+  if (posterImg && !posterImg.complete) posterImg.addEventListener('load', balanceIntro);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(balanceIntro);
+  balanceIntro();
 
   function el(tag, className, text){
     var e = document.createElement(tag);
